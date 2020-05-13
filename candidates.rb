@@ -11,10 +11,10 @@ jason = {"first_name"=> "Jason", "last_name"=> "Gray", level: "entry_level",
 candidates= [jane, sara, jason]
 
 average_age_mine = candidates.reduce(0) do |sum,candidate|
-  sum + candidate["age"]
+  sum + candidate[:age]
     sum/candidates.length
 end
 
-puts "#{average_age}"
+
 
 
